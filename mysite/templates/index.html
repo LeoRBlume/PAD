@@ -8,7 +8,7 @@
 <h1>
     {{msg}}
 </h1>
-<h4> Lista de 1 a 5</h4>
+<h4> Lista de <span> {{ list.0 }} </span> a <span> {{ list|length }} </span> </h4>
 <ul>
     {% for i in list %}
     <li> {{ i }}</li>
@@ -16,3 +16,4 @@
 </ul>
 </body>
 </html>
+
